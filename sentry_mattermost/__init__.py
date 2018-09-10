@@ -1,5 +1,3 @@
-try:
-    VERSION = __import__('pkg_resources') \
-        .get_distribution(__name__).version
-except Exception, e:
-    VERSION = '0.0.1'
+from __future__ import absolute_import
+
+from sentry_plugins.base import assert_package_not_installed
